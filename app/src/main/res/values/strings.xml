@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">AlkeWallet</string>
+
+    <!-- Buttons -->
+    <string name="action_create_new_account">Crear una cuenta nueva</string>
+    <string name="action_already_account">¿Ya tenés una cuenta?</string>
+    <string name="action_create_account">Crear cuenta</string>
+    <string name="action_init_session">Iniciar sesión</string>
+    <string name="action_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="action_request_money">Ingresar dinero</string>
+    <string name="action_send_money">Enviar dinero</string>
+    <string name="action_profile">Perfil del usuario</string>
+    <string name="action_information">Mi información</string>
+    <string name="action_cards">Mis tarjetas</string>
+    <string name="action_settings">Opciones</string>
+    <string name="action_help">Centro de ayuda</string>
+
+    <!-- Welcome -->
+    <string name="welcome_safe_place">El lugar más seguro para tu dinero</string>
+
+    <!-- Sign up -->
+    <string name="signup_title">Registrarse y empezar a transferir</string>
+    <string name="signup_hint_name">Nombre</string>
+    <string name="signup_hint_lastname">Apellido</string>
+    <string name="signup_hint_email">Email</string>
+    <string name="signup_hint_password">Contraseña</string>
+    <string name="signup_hint_password_confirm">Reingresar contraseña</string>
+
+    <!-- Log in -->
+    <string name="login_title">¡Logueá y empezá a transferir!</string>
+    <string name="login_hint_user">Email</string>
+    <string name="login_hint_password">Contraseña</string>
+
+    <!-- Mi perfil -->
+    <string name="profile_title">Mi perfil</string>
+
+    <!-- Enviar dinero -->
+    <string name="send_money_title">Enviar dinero</string>
+    <string name="send_money_hint_amount">Cantidad a ingresar</string>
+    <string name="send_money_hint_description">Notas de transferencia (opcional)</string>
+
+    <!-- Recibir dinero -->
+    <string name="request_money_title">Recibir dinero</string>
+    <string name="request_money_hint_amount">Cantidad a ingresar</string>
+    <string name="request_money_hint_description">Notas de transferencia (opcional)</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet
+    </string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
