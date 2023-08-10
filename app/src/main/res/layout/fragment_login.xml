@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.LogInFragment">
+    tools:context=".login.LoginFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/fab_horizontal_margin"
         android:hint="@string/signup_hint_email"
+        app:errorEnabled="true"
         app:layout_constraintTop_toBottomOf="@id/guideline">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -46,6 +47,7 @@
         android:layout_marginTop="@dimen/fab_margin"
         android:hint="@string/signup_hint_password"
         app:endIconMode="password_toggle"
+        app:errorEnabled="true"
         app:layout_constraintTop_toBottomOf="@id/input_email">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -71,6 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/fab_horizontal_margin"
         android:layout_marginVertical="@dimen/fab_margin"
+        android:enabled="false"
         android:text="@string/action_init_session"
         app:layout_constraintBottom_toTopOf="@id/button_signup" />
 
@@ -83,5 +86,18 @@
         android:layout_marginBottom="@dimen/extra_margin"
         android:text="@string/action_create_new_account"
         app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/blue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

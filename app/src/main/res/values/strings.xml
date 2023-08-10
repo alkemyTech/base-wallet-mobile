@@ -14,6 +14,13 @@
     <string name="action_cards">Mis tarjetas</string>
     <string name="action_settings">Opciones</string>
     <string name="action_help">Centro de ayuda</string>
+    <string name="action_not_supported">Opción no disponible</string>
+
+    <!-- Validation -->
+    <string name="invalid_user">Correo electrónico inválido</string>
+    <string name="invalid_password">La contraseña debe tener una longitud de 6 a 10 caracteres</string>
+    <string name="invalid_password_confirm">Las contraseñas no coinciden</string>
+    <string name="invalid_required">Campo requerido</string>
 
     <!-- Welcome -->
     <string name="welcome_safe_place">El lugar más seguro para tu dinero</string>
@@ -25,11 +32,14 @@
     <string name="signup_hint_email">Email</string>
     <string name="signup_hint_password">Contraseña</string>
     <string name="signup_hint_password_confirm">Reingresar contraseña</string>
+    <string name="signup_failed">Ocurrió un error al intentar registrar el nuevo usuario.</string>
+    <string name="signup_ok">Usuario generado con éxito. Ya podes iniciar sesión en la aplicación.</string>
 
     <!-- Log in -->
     <string name="login_title">¡Logueá y empezá a transferir!</string>
     <string name="login_hint_user">Email</string>
     <string name="login_hint_password">Contraseña</string>
+    <string name="login_failed">Ocurrió un error al intentar iniciar sesión.</string>
 
     <!-- Mi perfil -->
     <string name="profile_title">Mi perfil</string>
@@ -43,16 +53,4 @@
     <string name="request_money_title">Recibir dinero</string>
     <string name="request_money_hint_amount">Cantidad a ingresar</string>
     <string name="request_money_hint_description">Notas de transferencia (opcional)</string>
-
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet
-    </string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
 </resources>

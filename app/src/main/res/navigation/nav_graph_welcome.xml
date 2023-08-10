@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
-        android:name="com.alkemy.alkewallet.signup.SignUpFragment"
+        android:name="com.alkemy.alkewallet.signup.SignupFragment"
         tools:layout="@layout/fragment_signup">
 
         <action
@@ -34,11 +34,15 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.alkemy.alkewallet.login.LogInFragment"
+        android:name="com.alkemy.alkewallet.login.LoginFragment"
         tools:layout="@layout/fragment_login">
 
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
     </fragment>
 </navigation>

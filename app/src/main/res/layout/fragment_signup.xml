@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".signup.SignUpFragment">
+    tools:context=".signup.SignupFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_lastname"
+            android:id="@+id/input_last_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/fab_horizontal_margin"
@@ -63,7 +63,7 @@
             android:layout_marginHorizontal="@dimen/fab_horizontal_margin"
             android:layout_marginTop="@dimen/fab_margin"
             android:hint="@string/signup_hint_email"
-            app:layout_constraintTop_toBottomOf="@id/input_lastname">
+            app:layout_constraintTop_toBottomOf="@id/input_last_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -100,7 +100,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -110,6 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/fab_horizontal_margin"
             android:layout_marginVertical="@dimen/fab_margin"
+            android:enabled="false"
             android:text="@string/action_create_account"
             app:layout_constraintBottom_toTopOf="@id/button_login" />
 
@@ -122,6 +124,19 @@
             android:layout_marginBottom="@dimen/extra_margin"
             android:text="@string/action_already_account"
             app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/blue"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

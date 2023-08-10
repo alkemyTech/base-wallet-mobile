@@ -2,11 +2,9 @@ package com.alkemy.alkewallet.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.alkemy.alkewallet.R
 import com.alkemy.alkewallet.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
