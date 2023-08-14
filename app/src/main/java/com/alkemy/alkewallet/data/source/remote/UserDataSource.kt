@@ -39,6 +39,6 @@ class UserDataSource @Inject constructor(
     fun profile() = flow {
         emit(userService.getUser())
     }.catch {
-        Log.e(this.javaClass.name, "Signup failed", it)
+        Log.e(this.javaClass.name, "Retrieve profile failed", it)
     }.flowOn(Dispatchers.IO)
 }

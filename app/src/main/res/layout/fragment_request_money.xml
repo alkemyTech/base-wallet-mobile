@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/fab_margin"
         android:layout_marginTop="@dimen/fab_margin"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/icon_person"
         app:layout_constraintBottom_toTopOf="@+id/input_amount"
         app:layout_constraintEnd_toStartOf="@+id/textview_name"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,14 +76,28 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_login"
+        android:id="@+id/button_request"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/fab_horizontal_margin"
         android:layout_marginBottom="@dimen/extra_margin"
         android:drawableStart="@drawable/icon_request"
+        android:enabled="false"
         android:paddingHorizontal="@dimen/fab_margin"
         android:text="@string/action_request_money"
         app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/blue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

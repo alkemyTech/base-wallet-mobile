@@ -21,6 +21,7 @@
     <string name="invalid_password">La contraseña debe tener una longitud de 6 a 10 caracteres</string>
     <string name="invalid_password_confirm">Las contraseñas no coinciden</string>
     <string name="invalid_required">Campo requerido</string>
+    <string name="invalid_amount">El monto debe ser mayor a 0 (cero)</string>
 
     <!-- Welcome -->
     <string name="welcome_safe_place">El lugar más seguro para tu dinero</string>

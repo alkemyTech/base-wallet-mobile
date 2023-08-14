@@ -27,13 +27,21 @@
         android:id="@+id/requestMoneyFragment"
         android:name="com.alkemy.alkewallet.requestmoney.RequestMoneyFragment"
         android:label="@string/request_money_title"
-        tools:layout="@layout/fragment_request_money" />
+        tools:layout="@layout/fragment_request_money">
+        <action
+            android:id="@+id/action_requestMoneyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/sendMoneyFragment"
         android:name="com.alkemy.alkewallet.sendmoney.SendMoneyFragment"
         android:label="@string/send_money_title"
-        tools:layout="@layout/fragment_send_money" />
+        tools:layout="@layout/fragment_send_money">
+        <action
+            android:id="@+id/action_sendMoneyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.alkemy.alkewallet.profile.ProfileFragment"

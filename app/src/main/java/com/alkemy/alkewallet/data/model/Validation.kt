@@ -8,3 +8,8 @@ data class UserFormState(
     val passwordConfirmError: Int? = null,
     val isDataValid: Boolean = false
 )
+
+data class TransactionFormState(
+    val amountError: Int? = null,
+    val isDataValid: Boolean = false
+)

@@ -11,16 +11,17 @@ data class TransactionsResponse(
 )
 
 data class Transaction(
-    val id: Int,
+    val id: Int? = null,
     val amount: Double,
     val concept: String,
-    val date: Date,
-    val type: String,
+    val date: Date? = Date(),
+    val type: TransactionType,
     val accountId: Int,
     @SerializedName("to_account_id")
     val accountDestinationId: Int,
-    val createdAt: Date,
-    val updatedAt: Date
+    val userId: Int,
+    val createdAt: Date? = null,
+    val updatedAt: Date? = null
 )
 
 data class TransactionView(
@@ -29,3 +30,11 @@ data class TransactionView(
     val name: String,
     val date: String
 )
+
+enum class TransactionType {
+    @SerializedName("payment")
+    PAYMENT,
+
+    @SerializedName("topup")
+    TOP_UP
+}

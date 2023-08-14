@@ -3,17 +3,18 @@ package com.alkemy.alkewallet.data.model
 import com.google.gson.annotations.SerializedName
 
 data class ProfileResponse(
+    val id: Int,
     @SerializedName("first_name")
-    var name: String,
+    val name: String,
     @SerializedName("last_name")
-    var lastName: String,
-    var email: String,
-    var password: String,
-    var roleId: Int,
-    var points: Int
+    val lastName: String,
+    val email: String,
+    val password: String,
+    val roleId: Int,
+    val points: Int
 )
 
-data class User(
+data class UserView(
     val name: String? = null,
     val displayName: String? = null,
     val email: String? = null
