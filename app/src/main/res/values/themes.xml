@@ -18,7 +18,6 @@
     <style name="TextInverse" parent="TextAppearance.AppCompat.Inverse">
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="TextTitle">

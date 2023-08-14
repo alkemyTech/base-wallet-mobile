@@ -13,4 +13,8 @@ data class ProfileResponse(
     var points: Int
 )
 
-data class User(val displayName: String, val email: String)
+data class User(
+    val name: String? = null,
+    val displayName: String? = null,
+    val email: String? = null
+)

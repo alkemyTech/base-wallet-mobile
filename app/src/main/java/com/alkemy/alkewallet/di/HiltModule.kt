@@ -1,7 +1,9 @@
 package com.alkemy.alkewallet.di
 
 import android.content.Context
+import com.alkemy.alkewallet.data.source.remote.service.AccountService
 import com.alkemy.alkewallet.data.source.remote.service.AuthService
+import com.alkemy.alkewallet.data.source.remote.service.TransactionService
 import com.alkemy.alkewallet.data.source.remote.service.UserService
 import com.alkemy.alkewallet.login.AuthInterceptor
 import com.alkemy.alkewallet.login.SessionManager
@@ -64,6 +66,22 @@ object HiltModule {
     @Provides
     fun providesUserService(okHttpClient: OkHttpClient, retrofit: Retrofit.Builder): UserService {
         return retrofit.client(okHttpClient).build().create(UserService::class.java)
+    }
+
+    @Provides
+    fun providesTransactionService(
+        okHttpClient: OkHttpClient,
+        retrofit: Retrofit.Builder
+    ): TransactionService {
+        return retrofit.client(okHttpClient).build().create(TransactionService::class.java)
+    }
+
+    @Provides
+    fun providesAccountService(
+        okHttpClient: OkHttpClient,
+        retrofit: Retrofit.Builder
+    ): AccountService {
+        return retrofit.client(okHttpClient).build().create(AccountService::class.java)
     }
 
 }
